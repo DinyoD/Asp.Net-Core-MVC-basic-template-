@@ -11,7 +11,6 @@
     using BasicWebApp.Data.Models;
     using BasicWebApp.Data.Repositories;
     using BasicWebApp.Data.Seeding;
-    using BasicWebApp.Services.Data;
     using BasicWebApp.Services.Messaging;
 
     using CommandLine;
@@ -81,7 +80,6 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
-            services.AddTransient<ISettingsService, SettingsService>();
         }
     }
 }
